@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Web</title>
+</head>
+<body>
+    <style>
+         html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            color: darkcyan;
+            background-color: wheat;
+            font-family: arial,sans-serif;
+            background-image: url(image/background.jpg);
+        }
+        .container {
+            margin: auto;
+            background-color: white;
+            width: 960px;
+        }
+        @media screen and (max-width: 600px) {
+  .container {
+    /* display: relative; */
+    max-width: fit-content;
+  }
+  .hero {
+    width:100%;
+    /* position:initial; */
+    cursor: grab;
+    /* max-width: fit-content; */
+  }
+}
+
+        .judul {
+            padding-left: 5px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .header ul li {
+            padding-right: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            padding-left: 4px;
+        }
+
+        .header a{
+            color: palevioletred;
+            text-decoration: none;
+            padding: 3px;
+        }
+
+        li a:hover{
+            background-color: orange;
+            color: azure;
+            border-radius: 8px;
+        }
+
+        .hero {
+            height: 300px;
+            background-image: url(image/background.jpg);
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+            margin-top: 20px;
+        }
+        .main .Judul2 {
+            font-size: 23px;
+            font-variant: small-caps;
+            font-weight: bold;
+            padding: 10px;
+            padding-top: 20px;
+            font-style: italic;
+        }
+        
+        .main .penulis {
+            padding: 5px;
+            font-weight: 700px;
+            font-size: 10px;
+            padding-left: 14px;
+        }
+
+        .main .penulis {
+            color: chocolate;
+        }
+
+        .main a {
+            text-decoration: none;
+            font-weight: 500px;
+            padding: 3px;
+            color: darkslategray;
+        }
+
+        .main a:hover {
+            background-color: cadetblue;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .main {
+            width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .main p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .footer {
+            height: 35px;
+            background-color: gray;
+        }
+        .footer .copy {
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+        /* clearfix */
+        .cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 5px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font: 12px/18px arial;
+    font-weight: 600;
+}
+
+.sidebar h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 14px;
+    margin-top: 60px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: cadetblue;
+    padding: 5px;
+}
+
+.sidebar a:hover {
+    background-color: aquamarine;
+    color: white;
+    border-radius: 8px;
+}
+</style>
+
+    <div class="container">
+        <div class="header">
+            <div class="judul"><h1>My Website</h1></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">dashbord</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero"></div>
+        <div class="content cf">
+            <div class="main">
+                <h1 class="Judul2">My Website</h1>
+                <div class="penulis">ditulis oleh <span><a href="#">Prastio</a></span>,Pada 99 juli 9999</div>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta expedita voluptatibus incidunt voluptates saepe impedit, est autem quas sequi iusto ipsam illo quasi voluptas voluptatem, inventore earum neque, ullam cum.</p>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit tempora eius repudiandae id, nulla ratione. Impedit veniam natus corporis voluptatum dolorem atque autem consequatur quasi necessitatibus temporibus. Quod, voluptas exercitationem!</p>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo amet dolorem laboriosam perspiciatis asperiores facilis ratione ullam. At asperiores, fugiat accusantium distinctio dolore optio adipisci aut. Soluta voluptate minima esse?</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim placeat illo ducimus quaerat at accusantium saepe consectetur, odit libero recusandae. Hic quis suscipit aspernatur eius laboriosam quos voluptatum quisquam.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, ullam a rerum, voluptates placeat enim nobis amet est aliquid dignissimos inventore totam deserunt libero obcaecati quibusdam necessitatibus accusamus nisi. Illum!</p>
+                </div>
+            <div class="sidebar">
+                    <h3>Tentang Penulis</h3>
+                    <img src="image/kucing6.webp" alt="Prastio">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum iure corporis vel deleniti debitis temporibus modi. Quod deserunt quibusdam iste maxime blanditiis ipsum minima, inventore beatae eum alias accusantium neque.</p>
+                    <h1><a href="#">My Facebook</a></h1>
+                    <h1><a href="#">My Instagram</a></h1>
+                    <h1><a href="#">My Linkedin</a></h1>
+                    <h1><a href="#">My TikTok</a></h1>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="copy">Copyright Prastio Karim, 9999</div>  
+            </div>
+    </div>
+</body>
+</html>

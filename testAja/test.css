@@ -1,0 +1,46 @@
+.header h1 {
+    background-color: #abf1f5;
+    text-align: center;
+    color: white;
+}
+
+.main p {
+    width: 600px;
+    display: block;
+}
+
+.main {
+    background-color: #abf1f5;
+    color: white;
+    width: 600px;
+    
+}
+
+.nav,.main {
+    position: absolute;
+}
+
+.nav {
+    right: 0;
+}
+
+.nav {
+    background-color: #abf1f5;
+    color: white;
+    width: 400px;
+    height: 270px;
+}
+
+.nav a {
+    color: #7dafff;
+    text-decoration: none;
+}
+
+.main span {
+    background-color: #7dafff;
+}
+
+body {
+    font-family: arial;
+}
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws</title>
+    <style>
+        /* Reset CSS */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* Style */
+
+        body {
+            background-color: #e9f7f7;
+            font-family: Arial, sans-serif;
+            color: #778787;
+        }
+
+        .container {
+            width: 960px;
+            margin: auto;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #5bc7c7;
+            padding: 10px;
+        }
+
+        .judul {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .nav ul li a:hover {
+            background-color: #5f9c9c;
+            border-radius: 7px;
+        }
+
+        .nav ul li a:active {
+            color: #386363;
+        }
+
+        .hero {
+            background-image: url(image/kucing.jpg);
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid #386363;
+            border-top: 5px solid #386363;
+        }
+
+        .main {
+            width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .penulis {
+            font-size: 17px;
+            margin-top: 18px;
+            font-weight: 600;
+        }
+
+        .main h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .main a {
+            text-decoration: none;
+            color: #5bc7c7;
+            padding: 3px;
+        }
+
+        .main a:hover {
+            color: #e9f7f7;
+            background-color: #5f9c9c;
+            border-radius: 8px;
+        }
+        
+        .main a:active {
+            color: #386363;
+        }
+
+        .main p {
+            text-align: justify;
+            padding-top: 10px;
+            line-height: 24px;
+        }
+
+        .main h3 {
+            font-weight: bold;
+            font-size: 21px;
+            padding-top: 10px;
+        }
+
+        .sidebar {
+            width: 300px;
+            float: right;
+        }
+
+        .main hr {
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="judul">Kucing Anggora</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">product</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero"></div>
+        
+        <div class="main">
+            <h2>Kucing Anggora</h2>
+            <div class="penulis">Ditulis Oleh <span><a href="#">Prasthio Karim</a></span>, Pada 14 Juli 2023</div>
+            <p>Anggora (bahasa Turki: Ankara kedisi, 'kucing ankara') adalah salah satu ras kucing domestik alami tertua. Ras ini berasal dari Ankara, Turki. Kucing ini hanya bisa dikembangbiakkan di Turki karena peraturan dari negara asalnya. Di Indonesia sendiri, kucing anggora ras asli hanya ada beberapa ekor saja. Secara sederhana, ras kucing ini juga dikenal sebagai anggora atau kucing ankara.</p>
+            <h3>Sejarah Dan Asal Usul</h3>
+            <p>Anggora adalah ras kucing alami yang sangat tua dan salah satu ras yang tertua di dunia. Berabad-abad lamanya, kucing anggora mengalami seleksi alam di daerah pegunungan Ankara. Iklimnya yang sedemikian rupa membuat tubuhnya kuat dan bulunya berkembang menjadi panjang.</p>
+            <p>Anggora adalah ras kucing yang tidak diketahui dari mana asal terbentuknya. Namun, beberapa teori mengatakan bahwa anggora berasal dari seekor kucing liar dari Asia, yaitu kucing pallas. Akan tetapi, teori ini diragukan karena kucing pallas memiliki sifat yang berbanding terbalik dengan anggora.</p>
+            <p>Teori lainnya mengatakan anggora berasal dari kucing liar Afrika yang dijinakkan oleh suku Tatar. Keturunan kucing liar Afrika dipercaya dibawa ke Turki oleh para pedagang Mesir pada zaman peradaban Mesir Kuno. Dari kucing-kucing tersebutlah, anggora berkembangbiak melalui seleksi alam dan perkawinan sedarah di daerah pegunungan yang tertutup.</p>
+            <h3>Legenda</h3>
+            <p>Kucing ini di Turki sering dikaitkan dengan beberapa mitos dan legenda.</p>
+            <p>Salah satu legenda yang amat populer adalah kucing anggora milik Nabi Muhammad SAW. Dikisahkan, Muezza sedang tertidur lelap di atas jubahnya. Ketika nabi akan bergegas untuk salat, beliau tidak ingin mengganggu kucingnya, sehingga kemudian memotong sebagian jubahnya.</p>
+            <p>Legenda lainnya mempercayai bahwa kucing-kucing dapat membawa harapan. Jika seseorang memiliki keinginan yang kuat, dia harus memangku seekor kucing dan membisikkan keinginannya ke telinga si kucing. Kemudian, dia harus membelai kucing itu dan jika kucing itu menyukainya, maka keinginannya akan segera terwujud.</p>
+            <p>Beberapa orang Turki juga mempercayai bahwa Mustafa Kemal Atatürk, pendiri Republik Turki, akan dilahirkan kembali suatu hari dalam bentuk seekor anggora putih dengan satu warna biru dan satu mata emas. Itulah alasannya mengapa kucing dengan bermata ganjil sangat dihormati di Turki.</p>
+            <h3>Kepopuleran</h3>
+            <p>Kemungkinan anggora telah ada di Eropa sejak zaman Perang Salib. Pada saat itu, tentara-tentara Perang Salib pernah membawa kucing berbulu panjang ketika kembali ke Eropa. Pada abad ke-15, kucing-kucing anggora pernah dibawa dari Turki ke Eropa oleh beberapa wisatawan untuk dikembangbiakkan di Prancis dan Inggris, sehingga kucing anggora cukup populer pada abad Renaisans.</p>
+            <p>Pada abad ke-16, seorang sarjana Prancis, Nicolas-Claude Fabri de Peiresc membawa beberapa ekor anggora bersamanya dari Ankara ke Prancis. Dia kemudian mulai mengembangbiakkan kucing tersebut dan memberikan anak-anak kucingnya kepada para bangsawan sebagai hadiah dan kehormatan, salah satunya kepada Kardinal Richelieu. Pada abad itu juga, anggora pertama kalinya dijual kepada orang-orang kaya di Prancis dan Inggris oleh Sultan Turki. Anggora semakin dikenal di Eropa ketika Raja Louis XV dan Maria Antonia memelihara seekor anggora. Ada sebuah kisah yang menceritakan bahwa Maria Antonia sangat mencintai kucing anggoranya, sehingga ia mengirim kucingnya melalui sebuah kapal—yang juga digunakannya untuk pelariannya—ke Amerika Serikat pada masa Revolusi Prancis.</p>
+            <p>Pada tahun 1620, seorang penjelajah Asia berkebangsaan Italia, Pietro della Valle mendarat di Turki dan kemudian kembali ke Roma dengan membawa 7 pasang kucing anggora. Ia kemudian memberikan kucing-kucing tersebut kepada para bangsawan Romawi.</p>
+            <p>Pada abad ke-18, banyak orang yang salah mengenai kucing anggora. Ketika itu, setiap kucing berbulu panjang di Persia disebut sebagai ras kucing anggora. Padahal kucing-kucing tersebut merupakan kucing ras Persia. Pada waktu itu, banyak sekali kucing berbulu panjang di sekitar kota Angora (sekarang Ankara) dan sekitar daerah Persia (sekarang Iran). Pada waktu itu juga, tidak ada sama sekali perbedaan antara kucing berbulu panjang yang hidup di Angora dengan yang di Persia.</p>
+            <p>Ketika banyak pedagang Eropa yang berbisnis di Timur Tengah, kucing-kucing yang berasal dari Turki dan Persia semakin banyak diimpor ke Eropa. Kelompok kucing berbulu panjang sangat populer ketika kontes kucing mulai diadakan di Inggris pada tahun 1870. Sejak adanya kontes kucing itu, sifat-sifat genetik antara ras Persia dengan ras anggora mulai berkembang menjadi lebih murni dan spesifik.</p>
+            <!-- Bagian konten lainnya -->
+        </div>
+        <div class="sidebar"></div>
+        <div style="clear: both;"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

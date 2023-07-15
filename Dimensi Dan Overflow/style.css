@@ -1,0 +1,17 @@
+div{
+    width: 250px;
+    height: 230px;
+    background-color: pink;
+    overflow: scroll;
+    font-family: arial,sans-serif;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+    font-weight: 600;
+    
+}
+
+div span {
+    background-color: lightblue;
+}

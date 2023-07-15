@@ -1,0 +1,27 @@
+/* Belajar Text style atau font */
+h1{
+    font-family:arial,verdana,sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font-family:arial,verdana,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.test {
+    font:italic small-caps normal 30px/25px arial,verdana,sans-serif;
+}
